@@ -148,10 +148,10 @@ em {
   margin-bottom: 20px;
 }
 
-.recommended img {
-  width: 150px;
-  height: 150px;
-  border-radius: 8px;
+.recommended .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 .placeholder {
