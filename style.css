@@ -72,7 +72,6 @@
     .blox {
         max-width: 100%;             /* ปรับขนาดตามหน้าจอ */
         max-height: 100%;            /* ไม่ให้รูปหลุดจาก container */
-        object-fit: contain;         /* คงอัตราส่วนรูปภาพ */
     }
     
   /* Description Section */
