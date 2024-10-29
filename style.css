@@ -26,7 +26,7 @@
     position: relative;
     bottom: 12px;
   }
-  p {
+  .description p {
     font-size: 24px;
     text-indent: 2em;  /* ระยะห่างของบรรทัดแรก */
     line-height: 1.6;  /* ความสูงของบรรทัดสำหรับความอ่านง่าย */
@@ -36,7 +36,9 @@
   em {
     color: red;
   }
-
+  .gray{
+    color: #BDBEBE;
+  }
   .content-container {
     display: flex;
     align-items: flex-start;
