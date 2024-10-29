@@ -242,7 +242,7 @@ footer {
 
 /* กำหนดสไตล์สำหรับ div ที่รองรับ img */
 .image-container {
-  width: 300px;
+  width: 150px;
   height: 150px;
   border: 2px dashed #555;
   border-radius: 8px;
@@ -400,4 +400,32 @@ footer {
   overflow: hidden;
   position: relative;
   right: -50px;
+}
+
+/* membersection */
+.members {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.members .mem {
+  display: flex; /* ใช้ Flexbox */
+  flex-direction: column; /* จัดเรียงแนวตั้ง */
+  align-items: center; /* จัดกลางแนวนอน */
+  text-align: center; /* จัดข้อความให้อยู่กลาง */
+  padding-left: 40px;
+}
+
+.members .mem .image-container {
+  width: 150px;
+  height: 150px;
+  border: 2px dashed #555;
+  border-radius: 50%; /* เปลี่ยนเป็นรูปวงกลม */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  overflow: hidden;
+  position: relative;
 }
