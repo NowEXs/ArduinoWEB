@@ -1,324 +1,403 @@
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  body {
-    background-color: #1a1a1a;
-    color: #fff;
-  }
-  
-  /* Header */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #333;
-  }
-  header nav a {
-    color: white;
-    margin-right: 50px;
-    text-decoration: none;
-    position: relative;
-    bottom: 12px;
-  }
-  .description p {
-    font-size: 24px;
-    text-indent: 2em;  /* ระยะห่างของบรรทัดแรก */
-    line-height: 1.6;  /* ความสูงของบรรทัดสำหรับความอ่านง่าย */
-    margin-bottom: 1em; /* ระยะห่างระหว่างย่อหน้า */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
 
-  em {
-    color: red;
-  }
-  .gray{
-    color: #BDBEBE;
-  }
-  .content-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px; /* ระยะห่างระหว่างภาพและเนื้อหา */
-    padding: 20px;
-  }
-  
-  /* Main Container */
-  .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  .title {
-    text-align: center;
-    font-size: 7rem;
-    color: red;
-    margin-bottom: 20px;
-  }
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+}
 
-    /* จัด block ให้อยู่กึ่งกลางของหน้าจอ */
-    .block {
-        display: flex;               /* ใช้ Flexbox */
-        justify-content: center;     /* จัดกึ่งกลางแนวนอน */
-        align-items: center;         /* จัดกึ่งกลางแนวตั้ง */
-        height: auto;               /* ให้ div ครอบคลุมทั้งหน้าจอ */
-    }
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+}
 
-    /* ปรับขนาดของรูปภาพ (ถ้าต้องการ) */
-    .blox {
-        max-width: 100%;             /* ปรับขนาดตามหน้าจอ */
-        max-height: 100%;            /* ไม่ให้รูปหลุดจาก container */
-    }
-    
-  /* Description Section */
-  .description {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .project-box {
-    background-color: #666;
-    margin: 20px 0;
-    padding: 10px;
-    text-align: center;
-    border-radius: 8px;
-  }
-  .btn-green {
-    background-color: #00B06F;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  .btn-green:hover {
-    background-color: #008353;
-  }
+header nav a {
+  color: white;
+  margin-right: 50px;
+  text-decoration: none;
+  position: relative;
+  bottom: 12px;
+}
 
-  .text-and-button .btn-green {
-    background-color: #00B06F;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 100px;
-    width: 300px;
-    height: 65px;
-  }
-  .btn-green:hover {
-    background-color: #008353;
-  }
-  
-  /* Recommended Section */
-  .recommended {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .recommended img {
-    width: 150px;
-    height: 150px;
-    border-radius: 8px;
-  }
-  
-  .placeholder {
-    background-color: #666;
-    width: 150px;
-    height: 150px;
-  }
-  
-  /* Materials Section */
-  .materials {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .material-items {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-  }
-  
-  .material-items div {
-    width: 150px;
-    height: 100px;
-    background-color: #444;
-    border-radius: 8px;
-    text-align: center;
-    line-height: 100px;
-  }
-  
-    /* Source Code Section */
-    .source-code {
-        display: flex; /* จัดเรียงในแนวนอน */
-        gap: 20px;
-        align-items: center;
-        background-color: #333;
-        padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-    }
+.description p {
+  font-size: 24px;
+  text-indent: 2em;
+  /* ระยะห่างของบรรทัดแรก */
+  line-height: 1.6;
+  /* ความสูงของบรรทัดสำหรับความอ่านง่าย */
+  margin-bottom: 1em;
+  /* ระยะห่างระหว่างย่อหน้า */
+}
 
-    /* สำหรับส่วนของข้อความและปุ่ม */
-    .text-and-button {
-        display: flex;
-        flex-direction: column; /* จัดเรียงในแนวตั้ง */
-        align-items: flex-start; /* ชิดซ้าย */
-        gap: 10px;
-    }
+em {
+  color: red;
+}
 
-    /* ปรับขนาดรูปใน source code */
-    .source-code .image-container {
-        width: 600px;
-        height: 350px;
-        border: 2px dashed #555;
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #444;
-        overflow: hidden;
-        position: relative;
-        right: -50px;
-    }
-  
-  /* Members Section */
-  .members {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .members img {
-    width: 150px;
-    height: 150px;
-    border-radius: 8px;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    margin-top: 20px;
-  }
-  /* กำหนดสไตล์สำหรับ div ที่รองรับ img */
-  .image-container {
-    width: 300px;
-    height: 150px;
-    border: 2px dashed #555;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #444;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .image-container_PJimg {
-    width: 1100px;
-    height: 550px;
-    border: 2px dashed #555;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #444;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /* ซ่อน img ถ้ามันไม่โหลด */
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  /* Placeholder สำหรับภาพที่ไม่โหลด */
-  .image-container img[src=""],
-  .image-container img:not([src]) {
-    display: none; /* ซ่อนรูปภาพที่ไม่มี src */
-  }
-  
-  .ButBlox{
-    margin-left: -40px;
-    scale: 80%;
-  }
-  
-  .component-sourcecode{
-    position: relative;
-    right: -150px;
-  }
+.gray {
+  color: #BDBEBE;
+}
 
-  .text-members{
-    padding-bottom: 20px;
-  }
+.advertisement-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
 
-  .recommended .image-container{
-    width: 570px;
-    height: 300px;
-  }
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
 
-  .header{
-    margin: auto;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-  }
-  .header .image-container {
-    width: 45px;
-    height: 45px;
-    border: 2px dashed #555;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #444;
-    overflow: hidden;
-    position: relative;
-  }
+.container2 {
+  max-height: fit-content;
+  max-width: 1200px;
+  padding-top: 200px;
+  padding-bottom: 223px;
+  margin: auto;
+}
 
-  .description .btn-green{
-    width: 200px;
-    height: 55px;
-    font-size: 24px;
-  }
+.title {
+  text-align: center;
+  font-size: 7rem;
+  color: red;
+  margin-bottom: 20px;
+}
 
-  .home-nav{
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .nav_icon{
-    scale: 75%;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .blox_icon{
-    scale: 85%;
-    padding-top: 5px;
-    padding-left: 30px;
-    padding-right: 60px;
-  }
+/* จัด block ให้อยู่กึ่งกลางของหน้าจอ */
+.block {
+  display: flex;
+  /* ใช้ Flexbox */
+  justify-content: center;
+  /* จัดกึ่งกลางแนวนอน */
+  align-items: center;
+  /* จัดกึ่งกลางแนวตั้ง */
+  height: auto;
+  /* ให้ div ครอบคลุมทั้งหน้าจอ */
+}
 
-  .btn-green img{
-    scale: 85%;
-    position: relative;
-    top: -5px;
-    bottom: 5px;
-  }
+/* ปรับขนาดของรูปภาพ (ถ้าต้องการ) */
+.blox {
+  max-width: 100%;
+  /* ปรับขนาดตามหน้าจอ */
+  max-height: 100%;
+  /* ไม่ให้รูปหลุดจาก container */
+}
+
+/* Description Section */
+.description {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.project-box {
+  background-color: #666;
+  margin: 20px 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.btn-green {
+  background-color: #00B06F;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn-green:hover {
+  background-color: #008353;
+}
+
+.text-and-button .btn-green {
+  background-color: #00B06F;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 100px;
+  width: 300px;
+  height: 65px;
+}
+
+.btn-green:hover {
+  background-color: #008353;
+}
+
+/* Recommended Section */
+.recommended {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.recommended img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.placeholder {
+  background-color: #666;
+  width: 150px;
+  height: 150px;
+}
+
+/* Materials Section */
+.materials {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.material-items {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.material-items div {
+  width: 150px;
+  height: 100px;
+  background-color: #444;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* Source Code Section */
+.source-code {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* สำหรับส่วนของข้อความและปุ่ม */
+.text-and-button {
+  display: flex;
+  flex-direction: column;
+  /* จัดเรียงในแนวตั้ง */
+  align-items: flex-start;
+  /* ชิดซ้าย */
+  gap: 10px;
+}
+
+/* ปรับขนาดรูปใน source code */
+.source-code .image-container {
+  width: 600px;
+  height: 350px;
+  border: 2px dashed #555;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  overflow: hidden;
+  position: relative;
+  right: -50px;
+}
+
+/* Members Section */
+.members {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.members img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  margin-top: 20px;
+}
+
+/* กำหนดสไตล์สำหรับ div ที่รองรับ img */
+.image-container {
+  width: 300px;
+  height: 150px;
+  border: 2px dashed #555;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container_PJimg {
+  width: 1100px;
+  height: 550px;
+  border: 2px dashed #555;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ซ่อน img ถ้ามันไม่โหลด */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Placeholder สำหรับภาพที่ไม่โหลด */
+.image-container img[src=""],
+.image-container img:not([src]) {
+  display: none;
+  /* ซ่อนรูปภาพที่ไม่มี src */
+}
+
+.ButBlox {
+  margin-left: -40px;
+  scale: 80%;
+}
+
+.component-sourcecode {
+  position: relative;
+  right: -150px;
+}
+
+.text-members {
+  padding-bottom: 20px;
+}
+
+.recommended .image-container {
+  width: 570px;
+  height: 300px;
+}
+
+.header {
+  margin: auto;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.header .image-container {
+  width: 45px;
+  height: 45px;
+  border: 2px dashed #555;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  overflow: hidden;
+  position: relative;
+}
+
+.description .btn-green {
+  width: 200px;
+  height: 55px;
+  font-size: 24px;
+}
+
+.home-nav {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav_icon {
+  scale: 75%;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.blox_icon {
+  scale: 85%;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 60px;
+}
+
+.btn-green img {
+  scale: 85%;
+  position: relative;
+  top: -5px;
+  bottom: 5px;
+}
+
+.game1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.game1 .image-container {
+  width: 600px;
+  height: 350px;
+  border: 2px dashed #555;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  overflow: hidden;
+  position: relative;
+  right: -50px;
+}
+
+.game2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.game2 .image-container {
+  width: 600px;
+  height: 350px;
+  border: 2px dashed #555;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  overflow: hidden;
+  position: relative;
+  right: -50px;
+}
