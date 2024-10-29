@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #333333;
   color: #fff;
 }
 
@@ -17,7 +17,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #333;
+  background-color: #1a1a1a;
 }
 
 header nav a {
@@ -75,29 +75,21 @@ em {
   margin-bottom: 20px;
 }
 
-/* จัด block ให้อยู่กึ่งกลางของหน้าจอ */
 .block {
   display: flex;
-  /* ใช้ Flexbox */
   justify-content: center;
-  /* จัดกึ่งกลางแนวนอน */
   align-items: center;
-  /* จัดกึ่งกลางแนวตั้ง */
   height: auto;
-  /* ให้ div ครอบคลุมทั้งหน้าจอ */
 }
 
-/* ปรับขนาดของรูปภาพ (ถ้าต้องการ) */
 .blox {
   max-width: 100%;
-  /* ปรับขนาดตามหน้าจอ */
   max-height: 100%;
-  /* ไม่ให้รูปหลุดจาก container */
 }
 
 /* Description Section */
 .description {
-  background-color: #333;
+  background-color: #1a1a1a;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -162,7 +154,8 @@ em {
 
 /* Materials Section */
 .materials {
-  background-color: #333;
+  height: 200px;
+  background-color: #1a1a1a;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -180,7 +173,7 @@ em {
   background-color: #444;
   border-radius: 8px;
   text-align: center;
-  line-height: 100px;
+  line-height: 40px;
 }
 
 /* Source Code Section */
@@ -188,7 +181,7 @@ em {
   display: flex;
   gap: 20px;
   align-items: center;
-  background-color: #333;
+  background-color: #1a1a1a;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -236,7 +229,7 @@ em {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #333;
+  background-color: #1a1a1a;
   margin-top: 20px;
 }
 
@@ -319,7 +312,7 @@ footer {
   align-items: center;
   background-color: #444;
   overflow: hidden;
-  position: relative;
+  margin-right: -1100px;
 }
 
 .description .btn-green {
@@ -358,7 +351,7 @@ footer {
   display: flex;
   gap: 20px;
   align-items: center;
-  background-color: #333;
+  background-color: #1a1a1a;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -382,7 +375,7 @@ footer {
   display: flex;
   gap: 20px;
   align-items: center;
-  background-color: #333;
+  background-color: #1a1a1a;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -428,4 +421,51 @@ footer {
   background-color: #444;
   overflow: hidden;
   position: relative;
+}
+
+.welcome-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 200px;
+}
+
+.input-container {
+  margin-left: 185px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #007bff;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: white;
+  width: 800px;
+  height: 90px;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.arrow-btn {
+  background-color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.arrow {
+  font-size: 20px;
+  color: #007bff;
 }

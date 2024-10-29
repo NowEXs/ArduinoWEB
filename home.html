@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduiblox</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    // ฟังก์ชันสำหรับดึงค่า username จาก URL
+    function getUsernameFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('username') || 'Guest';
+    }
+
+    window.onload = function () {
+      const username = getUsernameFromUrl(); // ดึงค่าจาก query parameter
+      document.getElementById('welcome-message').textContent = `Welcome, ${username}!`;
+    };
+  </script>
+
+</head>
+
+<body>
+  <header class="header">
+    <!-- <img src="profile.jpg" alt="User Profile"> -->
+    <nav>
+      <img class="nav_icon" src="asset/nav_icon.png">
+      <img class="blox_icon" src="asset/blox_icon.png">
+      <a class="home-nav" href="home.html">Home</a>
+      <a href="home.html#materials">Materials</a>
+      <a href="home.html#game">Games</a>
+    </nav>
+    <div class="image-container">
+      <img src="asset/Profile.png" alt="profile">
+    </div>
+    <div id="welcome-message"></div>
+  </header>
+
+  <div class="advertisement-container">
+    <img src="asset/WeHave.png" alt="Advertisement">
+    <div class="container">
+      <div class="block">
+        <img class="blox" src="asset/arduiblox.png" alt="Arduiblox">
+      </div>
+      <!-- <h1 class="title">ARDUIBLOX</h1> -->
+
+      <div class="description" id="abstract">
+        <h1>Abstract</h1>
+        <br>
+        <p>โปรเจ็กต์ <strong>Arduiblox</strong> เป็นโปรเจ็กต์ที่รวบรวมเกมต่างๆไว้ใน microcontroller เพื่อส่งเสริม
+          การฝึกสมาธิและพัฒนาทักษะของผู้ใช้งาน โดยมีความยืดหยุ่นให้สามารถเพิ่มเกมใหม่ๆ
+          เข้าไปได้อย่างต่อเนื่องช่วยเปิดโอกาสให้ผู้พัฒนาและผู้ใช้งานสร้างประสบการณ์การเล่นเกมที่ <em>ท้าทาย</em> และ
+          <em>น่าตื่นเต้น</em> ไปพร้อมกับการเรียนรู้
+        </p>
+        <div class="project-box">
+          <div class="image-container_PJimg">
+            <img src="">
+          </div>
+        </div>
+        <a href="#materials"><button class="btn-green">Materials</button></a>
+      </div>
+
+      <div class="recommended" id="game">
+        <div>
+          <div class="image-container">
+            <img src="asset/game1test.png" alt="No Image Found">
+          </div>
+          <!-- <img src="memory.jpg" alt="Memory Challenge"> -->
+          <a href="game1.html"><button class="btn-green">Join</button></a>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="asset/game2test.png" alt="No Image Found">
+          </div>
+          <a href="game2.html"><button class="btn-green">Join</button></a>
+        </div>
+        <!-- <div class="placeholder"></div> -->
+      </div>
+
+      <div class="materials" id="materials">
+        <h2>Materials</h2>
+        <div class="material-items">
+          <div>
+            <div class="image-container">
+              <img src="asset/Buzzer Module.png" alt="Buzzer Module">
+            </div>
+            Buzzer Module
+          </div>
+          <div>
+            <div class="image-container">
+              <img src="asset/LCD1602 IIC.png" alt="LCD1602 IIC">
+            </div>
+            LCD1602 IIC
+          </div>
+          <div>
+            <div class="image-container">
+              <img src="asset/Micro Switch.png" alt="Micro Switch">
+            </div>
+            Micro Switch
+          </div>
+          <div>
+            <div class="image-container">
+              <img src="asset/Potentiometer.png" alt="Potentiometer">
+            </div>
+            Potentiometer
+          </div>
+          <div>
+            <div class="image-container">
+              <img src="asset/LED RGB.png" alt="LED RGB">
+            </div>
+            LED RGB
+          </div>
+        </div>
+      </div>
+
+      <!-- Source Code Section -->
+      <div class="source-code">
+        <div class="image-container">
+          <img src="" alt="No Image Found">
+        </div>
+        <div class="component-sourcecode">
+          <div class="text-and-button">
+            <h1>Source Code</h1>
+            <p><span class="gray">By</span> Members</p>
+            <p class="gray">Age 9+</p>
+            <button class="btn-green"><img src="asset/Play.png"></button>
+            <img class="ButBlox" src="asset/ButBlox.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="text-members">
+        <h1>
+          Members
+        </h1>
+      </div>
+      <div class="members">
+        <div class="mem">
+          <div class="image-container">
+            <img src="asset/66070246.png" alt="No Image Found">
+          </div>
+          <br>
+          นางสาวจัสมิน อลิชา เธอะเซร่า 66070246
+        </div>
+        <div class="mem">
+          <div class="image-container">
+            <img src="asset/66070269.png" alt="No Image Found">
+          </div>
+          <br>
+          นายธนานุภัทร รอดปาน 66070269
+        </div>
+        <div class="mem">
+          <div class="image-container">
+            <img src="asset/66070285.png" alt="No Image Found">
+          </div>
+          <br>
+          นายปฐมกานต์ สุวรรณน้อย 66070285
+        </div>
+        <div class="mem">
+          <div class="image-container">
+            <img src="asset/66070305.png" alt="No Image Found">
+          </div>
+          <br>
+          นายภูริภัทร อรุณไพศาล 66070305
+        </div>
+        <!-- <img src="member1.jpg" alt="Member">
+      <img src="member2.jpg" alt="Member">
+      <img src="member3.jpg" alt="Member"> -->
+      </div>
+    </div>
+    <img class="advertisement" src="asset/WeHave.png" alt="Advertisement">
+  </div>
+
+  <footer>
+    <p>Memory Challenge Tycoon!!!!! (EXTREME)</p>
+  </footer>
+
+</body>
+
+</html>
