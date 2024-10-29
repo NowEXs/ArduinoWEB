@@ -12,7 +12,7 @@
         function displayUsername() {
             const username = localStorage.getItem('username');
             if (username) {
-                document.getElementById('welcome-message').textContent = `Welcome, ${username}!`;
+                document.getElementById('welcome-message').textContent = `You like it?, ${username}`;
             } else {
                 // ถ้าไม่มี username ให้ redirect กลับหน้าแรก
                 window.location.href = 'index.html';
