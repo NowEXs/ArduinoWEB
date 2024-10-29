@@ -10,11 +10,14 @@
 
     <script>
         function submitInput() {
-            const username = document.querySelector('input').value; // รับค่าจาก input
+            const username = document.querySelector('input').value;
             if (username) {
-                window.location.href = `home.html?username=${encodeURIComponent(username)}`;
+                // บันทึก username ลง Local Storage
+                localStorage.setItem('username', username);
+                // ไปหน้าสอง
+                window.location.href = 'home.html';
             } else {
-                alert('Please enter a username!'); // แจ้งเตือนถ้ายังไม่ได้กรอกอะไร
+                alert('Please enter a username!');
             }
         }
     </script>
@@ -28,11 +31,9 @@
         </div>
         <div class="input-container">
             <input type="text" placeholder="Enter username">
-            <!-- <a href="/home.html"> -->
             <button onclick="submitInput()" class="arrow-btn">
                 <span class="arrow">&#10132;</span> <!-- ลูกศร -->
             </button>
-            <!-- </a> -->
         </div>
     </div>
 </body>

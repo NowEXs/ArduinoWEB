@@ -9,27 +9,17 @@
   <link rel="stylesheet" href="style.css">
 
   <script>
-    function getUsernameFromUrl() {
-      const params = new URLSearchParams(window.location.search);
-      return params.get('username') || 'Guest';
+    function displayUsername() {
+      const username = localStorage.getItem('username');
+      if (username) {
+        document.getElementById('welcome-message').textContent = `Welcome, ${username}!`;
+      } else {
+        window.location.href = 'index.html';
+      }
     }
 
-    window.onload = function () {
-      const username = getUsernameFromUrl(); // ดึงค่าจาก query parameter
-      document.getElementById('welcome-message').textContent = `Welcome, ${username}!`;
-    };
+    window.onload = displayUsername;
   </script>
-
-  <script>
-    function submitInput() {
-        const username = document.querySelector('welcome-message').value; // รับค่าจาก input
-        if (username) {
-            window.location.href = `home.html?username=${encodeURIComponent(username)}`;
-        } else {
-            alert('Please enter a username!'); // แจ้งเตือนถ้ายังไม่ได้กรอกอะไร
-        }
-    }
-</script>
 
 </head>
 
@@ -55,7 +45,6 @@
       <div class="block">
         <img class="blox" src="asset/arduiblox.png" alt="Arduiblox">
       </div>
-      <!-- <h1 class="title">ARDUIBLOX</h1> -->
 
       <div class="description" id="abstract">
         <h1>Abstract</h1>
@@ -78,13 +67,13 @@
           <div class="image-container">
             <img src="asset/game1test.png" alt="No Image Found">
           </div>
-          <a href="game1.html"><button onclick="submitInput()"  class="btn-green">Join</button></a>
+          <a href="game1.html"><button class="btn-green">Join</button></a>
         </div>
         <div>
           <div class="image-container">
             <img src="asset/game2test.png" alt="No Image Found">
           </div>
-          <a href="game2.html"><button onclick="submitInput()" class="btn-green">Join</button></a>
+          <a href="game2.html"><button class="btn-green">Join</button></a>
         </div>
       </div>
 

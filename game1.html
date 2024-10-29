@@ -9,26 +9,16 @@
     <link rel="stylesheet" href="style.css">
 
     <script>
-        function getUsernameFromUrl() {
-          const params = new URLSearchParams(window.location.search);
-          return params.get('username') || 'Guest';
-        }
-    
-        window.onload = function () {
-          const username = getUsernameFromUrl();
-          document.getElementById('welcome-message').textContent = `Welcome, ${username}!`;
-        };
-      </script>
-
-      <script>
-        function submitInput() {
-            const username = document.querySelector('welcome-message').value;
+        function displayUsername() {
+            const username = localStorage.getItem('username');
             if (username) {
-                window.location.href = `home.html?username=${encodeURIComponent(username)}`;
+                document.getElementById('welcome-message').textContent = `Welcome, ${username}!`;
             } else {
-                alert('Please enter a username!'); // แจ้งเตือนถ้ายังไม่ได้กรอกอะไร
+                window.location.href = 'index.html';
             }
         }
+
+        window.onload = displayUsername;
     </script>
 
 </head>
@@ -39,7 +29,7 @@
         <nav>
             <img class="nav_icon" src="asset/nav_icon.png">
             <img class="blox_icon" src="asset/blox_icon.png">
-            <a onclick="submitInput()" class="home-nav" href="home.html">Home</a>
+            <a class="home-nav" href="home.html">Home</a>
             <a href="home.html#materials">Materials</a>
             <a href="home.html#game">Games</a>
         </nav>
@@ -72,4 +62,5 @@
     </footer>
 
 </body>
+
 </html>
