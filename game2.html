@@ -7,6 +7,30 @@
     <title>Arduiblox</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    <script>
+        function getUsernameFromUrl() {
+          const params = new URLSearchParams(window.location.search);
+          return params.get('username') || 'Guest';
+        }
+    
+        window.onload = function () {
+          const username = getUsernameFromUrl(); // ดึงค่าจาก query parameter
+          document.getElementById('welcome-message').textContent = `Welcome, ${username}!`;
+        };
+      </script>
+
+      <script>
+        function submitInput() {
+            const username = document.querySelector('welcome-message').value; // รับค่าจาก input
+            if (username) {
+                window.location.href = `home.html?username=${encodeURIComponent(username)}`;
+            } else {
+                alert('Please enter a username!'); // แจ้งเตือนถ้ายังไม่ได้กรอกอะไร
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -15,13 +39,14 @@
         <nav>
             <img class="nav_icon" src="asset/nav_icon.png">
             <img class="blox_icon" src="asset/blox_icon.png">
-            <a class="home-nav" href="home.html">Home</a>
+            <a onclick="submitInput()" class="home-nav" href="home.html">Home</a>
             <a href="home.html#materials">Materials</a>
             <a href="home.html#game">Games</a>
         </nav>
         <div class="image-container">
             <img src="asset/Profile.png" alt="profile">
         </div>
+        <div id="welcome-message"></div>
     </header>
     <div class="container2">
         <div class="game2">
