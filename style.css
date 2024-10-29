@@ -462,7 +462,7 @@ input {
 }
 
 .arrow-btn:hover {
-  background-color: #f0f0f0;
+  scale: 125%;
 }
 
 .arrow {
