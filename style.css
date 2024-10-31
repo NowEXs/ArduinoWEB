@@ -18,11 +18,9 @@ header {
   justify-content: space-between;
   padding: 20px;
   background-color: #1a1a1a;
-  width: 1890px; /* กำหนดความกว้างที่ต้องการ */
-  height: 80px;  /* กำหนดความสูงที่ต้องการ */
-  margin: 0 auto;
+  width: inherit;
+  box-sizing: border-box;
 }
-
 
 header nav a {
   color: white;
@@ -222,6 +220,7 @@ em {
 
 /* ปรับขนาดรูปใน source code */
 .source-code .image-container {
+  width: inherit;
   width: 600px;
   height: 350px;
   border: 2px dashed #555;
@@ -254,12 +253,13 @@ footer {
   padding: 10px;
   background-color: #1a1a1a;
   margin-top: 20px;
-  width: 1890px; /* กำหนดความกว้างที่ต้องการ */
-  margin: 0 auto;
+  width: initial;
+  box-sizing: border-box;
 }
 
 /* กำหนดสไตล์สำหรับ div ที่รองรับ img */
 .image-container {
+  width: inherit;
   width: 150px;
   height: 150px;
   border: 2px dashed #555;
