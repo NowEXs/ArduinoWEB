@@ -18,6 +18,12 @@ header {
   justify-content: space-between;
   padding: 20px;
   background-color: #1a1a1a;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header > * {
+  padding: 20px; /* ใช้ padding ในองค์ประกอบภายในแทน */
 }
 
 header nav a {
