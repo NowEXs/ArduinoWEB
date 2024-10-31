@@ -249,6 +249,7 @@ em {
 
 /* Footer */
 footer {
+  position: sticky fixed;
   text-align: center;
   padding: 10px;
   background-color: #1a1a1a;

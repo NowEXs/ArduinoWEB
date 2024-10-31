@@ -23,14 +23,27 @@
 
     window.onload = displayUsername;
 
+    let clickCount = 0;
+
     function showPopup() {
-      popup.classList.add('show'); // Show the popup
-
-      setTimeout(() => {
-        popup.classList.remove('show');
-      }, 1500);
+        clickCount++;
+        const popup = document.getElementById('popup');
+        const popupImage = document.getElementById('popupImage');
+    
+        if (clickCount % 2 === 0) {
+            popupImage.src = 'asset/ajarn2.png'; // ใส่ลิงค์รูปภาพสำหรับเลขคู่
+        } else {
+            popupImage.src = 'asset/ajarn.png'; // ใส่ลิงค์รูปภาพสำหรับเลขคี่
+        }
+    
+        popup.classList.add('show'); // แสดง popup
+    
+        // ซ่อน popup หลังจากแอนิเมชันเสร็จสิ้น
+        setTimeout(() => {
+            popup.classList.remove('show');
+        }, 1500); // ตั้งเวลาแอนิเมชัน (0.5 วินาทีในการ fade + 1 วินาที delay)
     }
-
+    
   </script>
 
 </head>
@@ -64,8 +77,8 @@
       </div>
 
       <div id="popup" class="popup-content">
-        Hey! <span id="counter"></span> Click a Picture
-        <img src="asset/ajarn.png" alt="Ajarn">
+        Hey! Click a Picture
+        <img id="popupImage" src="asset/ajarn.png" alt="popup image" />
       </div>
 
       <div class="description" id="abstract">
