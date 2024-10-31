@@ -119,10 +119,19 @@ em {
   cursor: pointer;
   border-radius: 5px;
   margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-green:hover {
-  background-color: #008353;
+  animation: colorChange 2s infinite; /* ใช้ Animation แบบวนลูป */
+}
+
+@keyframes colorChange {
+  0% { background-color: #00B06F; } /* สีเริ่มต้น */
+  25% { background-color: #b00000; } /* สีส้ม */
+  50% { background-color: #0003b0; } /* สีน้ำเงิน */
+  75% { background-color: #a4b000; } /* สีชมพู */
+  100% { background-color: #00B06F; } /* กลับมาสีเริ่มต้น */
 }
 
 .text-and-button .btn-green {
