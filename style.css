@@ -18,9 +18,11 @@ header {
   justify-content: space-between;
   padding: 20px;
   background-color: #1a1a1a;
-  width: 100%;
-  box-sizing: border-box;
+  width: 1890px; /* กำหนดความกว้างที่ต้องการ */
+  height: 80px;  /* กำหนดความสูงที่ต้องการ */
+  margin: 0 auto;
 }
+
 
 header nav a {
   color: white;
@@ -252,8 +254,8 @@ footer {
   padding: 10px;
   background-color: #1a1a1a;
   margin-top: 20px;
-  width: 100%;
-  box-sizing: border-box;
+  width: 1890px; /* กำหนดความกว้างที่ต้องการ */
+  margin: 0 auto;
 }
 
 /* กำหนดสไตล์สำหรับ div ที่รองรับ img */
