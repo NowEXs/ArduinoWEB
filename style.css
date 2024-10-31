@@ -536,3 +536,7 @@ input {
   0% { opacity: 1; }
   100% { opacity: 0; }
 }
+
+.image-container_PJimg img {
+  scale: 35%;
+}
