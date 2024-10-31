@@ -489,7 +489,7 @@ input {
 
 .profile-space {
   display: flex;
-  width: 200px;
+  width: fit-content;
 }
 
 .wel-mes {
