@@ -254,6 +254,12 @@ footer {
   padding: 10px;
   background-color: #1a1a1a;
   margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer > * {
+  padding: 20px; /* ใช้ padding ในองค์ประกอบภายในแทน */
 }
 
 /* กำหนดสไตล์สำหรับ div ที่รองรับ img */
