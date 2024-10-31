@@ -496,3 +496,37 @@ input {
   padding-left: 60px;
   padding-top: 15px;
 }
+
+/* Centered Popup container */
+.popup-content {
+  display: none;
+  padding: 20px;
+  color: #ff8513;
+  font-size: 124px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.1s ease;
+  
+  /* Centering the popup */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+/* Show popup with rapid flash */
+.popup-content.show {
+  display: block;
+  animation: fadeOutJumpscare 0.5s forwards 1s; /* Fades out after 1s */
+  transform: translate(-50%, -50%) scale(1.2); /* Enlarges slightly for jumpscare */
+}
+
+/* Keyframes for fade-out */
+@keyframes fadeOutJumpscare {
+  0% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+  50% { transform: translate(-50%, -50%) scale(1.1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+}
