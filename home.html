@@ -22,19 +22,19 @@
 
     let clickCount = 0;
 
-function showPopup() {
-    clickCount++;
-    const popup = document.getElementById('popup');
-    const counter = document.getElementById('counter');
+    function showPopup() {
+      clickCount++;
+      const popup = document.getElementById('popup');
+      const counter = document.getElementById('counter');
 
-    counter.textContent = clickCount; // Update the count text
-    popup.classList.add('show'); // Show the popup
+      counter.textContent = clickCount; // Update the count text
+      popup.classList.add('show'); // Show the popup
 
-    // Remove the 'show' class after animation completes to reset
-    setTimeout(() => {
+      // Remove the 'show' class after animation completes to reset
+      setTimeout(() => {
         popup.classList.remove('show');
-    }, 1500); // Adjusted for jumpscare timing (0.5s fade + 1s delay)
-}
+      }, 1500); // Adjusted for jumpscare timing (0.5s fade + 1s delay)
+    }
   </script>
 
 </head>
@@ -51,9 +51,9 @@ function showPopup() {
 
     <div class="profile-space">
       <div>
-      <div class="image-container">
-        <img src="asset/Profile.png" alt="profile">
-      </div>
+        <div class="image-container">
+          <img src="asset/Profile.png" alt="profile">
+        </div>
       </div>
       <div>
         <div class="wel-mes" id="welcome-message"></div>
