@@ -22,10 +22,6 @@ header {
   box-sizing: border-box;
 }
 
-header > * {
-  padding: 20px; /* ใช้ padding ในองค์ประกอบภายในแทน */
-}
-
 header nav a {
   color: white;
   margin-right: 50px;
@@ -258,10 +254,6 @@ footer {
   margin-top: 20px;
   width: 100%;
   box-sizing: border-box;
-}
-
-footer > * {
-  padding: 20px; /* ใช้ padding ในองค์ประกอบภายในแทน */
 }
 
 /* กำหนดสไตล์สำหรับ div ที่รองรับ img */
@@ -571,4 +563,82 @@ input {
 
 h1 {
   font-size: 45px;
+}
+
+
+/* Responsive styles for Samsung Galaxy A12 */
+@media only screen and (max-width: 720px) {
+  body {
+    padding: 0 10px; /* Add some padding for smaller screens */
+  }
+
+  header {
+    flex-direction: column; /* Stack header items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  header nav a {
+    margin-right: 20px; /* Reduce space between links */
+  }
+
+  .container {
+    padding: 10px; /* Reduce padding in the main container */
+  }
+
+  .title {
+    font-size: 5rem; /* Reduce title size */
+  }
+
+  .description p {
+    font-size: 18px; /* Reduce paragraph size */
+  }
+
+  .project-box {
+    margin: 10px 0; /* Reduce margin for project boxes */
+  }
+
+  .btn-green {
+    width: 100%; /* Full width for buttons */
+    margin-top: 10px; /* Reduce margin */
+  }
+
+  .recommended .image-container {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .materials .material-items {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .source-code .image-container {
+    width: 100%; /* Full width for source code images */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .members img {
+    width: 100px; /* Reduce member image size */
+    height: 100px; /* Maintain aspect ratio */
+  }
+
+  .game1 .image-container, 
+  .game2 .image-container {
+    width: 100%; /* Full width for game images */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .input-container {
+    width: 100%; /* Full width for input container */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .arrow-btn {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .popup-content {
+    font-size: 64px; /* Reduce popup font size */
+    padding: 10px; /* Reduce padding */
+  }
 }
