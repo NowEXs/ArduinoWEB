@@ -45,7 +45,9 @@ header nav a {
 }
 
 em {
+  font-family: "Sriracha", cursive;
   color: red;
+  font-size: 30px;
 }
 
 .gray {
@@ -437,6 +439,7 @@ footer > * {
   align-items: center; /* จัดกลางแนวนอน */
   text-align: center; /* จัดข้อความให้อยู่กลาง */
   padding-left: 40px;
+  font-family: "Sriracha", cursive;
 }
 
 .members .mem .image-container {
@@ -551,4 +554,21 @@ input {
 
 .image-container_PJimg img {
   scale: 35%;
+}
+
+.description .des {
+  font-family: "Sriracha", cursive;
+  font-size: 26px;
+}
+
+.description .des strong {
+  font-size: 30px;
+}
+
+.description .des span {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 45px;
 }
