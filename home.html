@@ -7,8 +7,8 @@
   <title>Arduiblox</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <script>
@@ -23,21 +23,14 @@
 
     window.onload = displayUsername;
 
-    let clickCount = 0;
-
     function showPopup() {
-      clickCount++;
-      const popup = document.getElementById('popup');
-      const counter = document.getElementById('counter');
-
-      counter.textContent = clickCount; // Update the count text
       popup.classList.add('show'); // Show the popup
 
       setTimeout(() => {
         popup.classList.remove('show');
-      }, 1500); // Adjusted for jumpscare timing (0.5s fade + 1s delay)
+      }, 1500);
     }
-    
+
   </script>
 
 </head>
@@ -71,13 +64,15 @@
       </div>
 
       <div id="popup" class="popup-content">
-        <span id="counter">1</span> times!
+        Hey <span id="counter"></span> Click a Picture
+        <img src="asset/ajarn.png" alt="Ajarn">
       </div>
 
       <div class="description" id="abstract">
         <h1>Abstract</h1>
         <br>
-        <p class="des">โปรเจ็กต์ <strong>Arduiblox</strong> เป็นโปรเจ็กต์ที่รวบรวมเกมต่างๆไว้ใน<span> microcontroller </span>เพื่อส่งเสริม
+        <p class="des">โปรเจ็กต์ <strong>Arduiblox</strong> เป็นโปรเจ็กต์ที่รวบรวมเกมต่างๆไว้ใน<span> microcontroller
+          </span>เพื่อส่งเสริม
           การฝึกสมาธิและพัฒนาทักษะของผู้ใช้งาน โดยมีความยืดหยุ่นให้สามารถเพิ่มเกมใหม่ๆ
           เข้าไปได้อย่างต่อเนื่องช่วยเปิดโอกาสให้ผู้พัฒนาและผู้ใช้งานสร้างประสบการณ์การเล่นเกมที่ <em>ท้าทาย</em> และ
           <em>น่าตื่นเต้น</em> ไปพร้อมกับการเรียนรู้
@@ -143,9 +138,11 @@
 
       <!-- Source Code Section -->
       <div class="source-code">
-        <div class="image-container">
-          <img src="asset/source_code.png" alt="No Image Found">
-        </div>
+        <a href="https://github.com/NonsanXX/Arduiblox">
+          <div class="image-container">
+            <img src="asset/source_code.png" alt="No Image Found">
+          </div>
+        </a>
         <div class="component-sourcecode">
           <div class="text-and-button">
             <h1>Source Code</h1>
