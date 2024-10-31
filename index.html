@@ -12,9 +12,7 @@
         function submitInput() {
             const username = document.querySelector('input').value;
             if (username) {
-                // บันทึก username ลง Local Storage
                 localStorage.setItem('username', username);
-                // ไปหน้าสอง
                 window.location.href = 'home.html';
             } else {
                 alert('Please enter a username!');
