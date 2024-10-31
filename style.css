@@ -520,18 +520,13 @@ input {
 /* Show popup with rapid flash */
 .popup-content.show {
   display: block;
-  animation: shake 0.5s ease, fadeOutJumpscare 0.5s forwards 1s; /* Fades out after 1s */
+  animation: fadeOutJumpscare 0.5s forwards 1s; /* Fades out after 1s */
+  transform: translate(-50%, -50%) scale(1.2); /* Enlarges slightly for jumpscare */
 }
 
-/* Fade-out keyframes */
+/* Keyframes for fade-out */
 @keyframes fadeOutJumpscare {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-@keyframes shake {
-  0%, 100% { transform: translate(-50%, -50%) rotate(0); }
-  25% { transform: translate(calc(-50% - 5px), -50%) rotate(-5deg); }
-  50% { transform: translate(-50%, calc(-50% + 5px)) rotate(5deg); }
-  75% { transform: translate(calc(-50% + 5px), -50%) rotate(-5deg); }
+  0% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+  50% { transform: translate(-50%, -50%) scale(1.1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
 }
