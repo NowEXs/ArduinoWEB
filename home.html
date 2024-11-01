@@ -26,24 +26,24 @@
     let clickCount = 0;
 
     function showPopup() {
-        clickCount++;
-        const popup = document.getElementById('popup');
-        const popupImage = document.getElementById('popupImage');
-    
-        if (clickCount % 2 === 0) {
-            popupImage.src = 'asset/ajarn2.png';
-        } else {
-            popupImage.src = 'asset/ajarn.png';
-        }
-    
-        popup.classList.add('show'); // แสดง popup
-    
-        // ซ่อน popup หลังจากแอนิเมชันเสร็จสิ้น
-        setTimeout(() => {
-            popup.classList.remove('show');
-        }, 1500); // ตั้งเวลาแอนิเมชัน (0.5 วินาทีในการ fade + 1 วินาที delay)
+      clickCount++;
+      const popup = document.getElementById('popup');
+      const popupImage = document.getElementById('popupImage');
+
+      if (clickCount % 2 === 0) {
+        popupImage.src = 'asset/ajarn2.png';
+      } else {
+        popupImage.src = 'asset/ajarn.png';
+      }
+
+      popup.classList.add('show'); // แสดง popup
+
+      // ซ่อน popup หลังจากแอนิเมชันเสร็จสิ้น
+      setTimeout(() => {
+        popup.classList.remove('show');
+      }, 1500); // ตั้งเวลาแอนิเมชัน (0.5 วินาทีในการ fade + 1 วินาที delay)
     }
-    
+
   </script>
 
 </head>
@@ -83,12 +83,15 @@
 
       <div class="description" id="abstract">
         <h1>Abstract</h1>
-        <br>
-        <p class="des">โปรเจ็กต์ <strong>Arduiblox</strong> เป็นโปรเจ็กต์ที่รวบรวมเกมต่างๆไว้ใน<span> microcontroller
-          </span>เพื่อส่งเสริม
-          การฝึกสมาธิและพัฒนาทักษะของผู้ใช้งาน โดยมีความยืดหยุ่นให้สามารถเพิ่มเกมใหม่ๆ
-          เข้าไปได้อย่างต่อเนื่องช่วยเปิดโอกาสให้ผู้พัฒนาและผู้ใช้งานสร้างประสบการณ์การเล่นเกมที่ <em>ท้าทาย</em> และ
-          <em>น่าตื่นเต้น</em> ไปพร้อมกับการเรียนรู้
+        <br>   
+        <p class="des">
+          โปรเจ็กต์ <strong>Arduiblox</strong> เป็นแพลตฟอร์มที่รวบรวมเกมหลากหลายไว้ใน microcontroller
+          เพื่อส่งเสริมการฝึกสมาธิและพัฒนาทักษะเชิงความคิดของผู้ใช้งาน โดยเปิดโอกาสให้สามารถเพิ่มเกมใหม่ๆ
+          ได้อย่างต่อเนื่อง ช่วยสร้างประสบการณ์การเล่นเกมที่ <em>ท้าทาย</em> และ <em>น่าตื่นเต้น</em> ไปพร้อมกับการเรียนรู้
+          นอกจากนี้ <strong>Arduiblox</strong>
+          ยังเป็นเครื่องมือสำหรับการเรียนรู้เกี่ยวกับความสัมพันธ์ระหว่างความถี่และโน้ตเพลง
+          ซึ่งเป็นทักษะพื้นฐานของการได้ยิน และยังเป็นการฝึกฝนสมอง
+          ช่วยกระตุ้นความคิดสร้างสรรค์พร้อมทักษะในการวิเคราะห์อีกด้วย
         </p>
         <div class="project-box">
           <div class="image-container_PJimg">
