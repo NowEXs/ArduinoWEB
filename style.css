@@ -6,6 +6,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+@font-face {
+  font-family: "FC Iconic Rounded";
+  src: url("asset/FC\ Iconic\ Rounded\ [Non-commercial].otf") format("opentype");
+}
+
 body {
   background-color: #333333;
   color: #fff;
@@ -41,7 +46,7 @@ header nav a {
 }
 
 em {
-  font-family: "Sriracha", cursive;
+  font-family: "FC Iconic Rounded";
   color: red;
   font-size: 30px;
 }
@@ -434,7 +439,7 @@ footer {
   align-items: center; /* จัดกลางแนวนอน */
   text-align: center; /* จัดข้อความให้อยู่กลาง */
   padding-left: 40px;
-  font-family: "Sriracha", cursive;
+  font-family: "FC Iconic Rounded";
 }
 
 .members .mem .image-container {
@@ -552,7 +557,7 @@ input {
 }
 
 .description .des {
-  font-family: "Sriracha", cursive;
+  font-family: "FC Iconic Rounded", cursive;
   font-size: 26px;
 }
 
