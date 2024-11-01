@@ -20,20 +20,15 @@
 
         window.onload = displayUsername;
 
-        let clickCount = 0;
 
         function showPopup() {
-            clickCount++;
             const popup = document.getElementById('popup');
-            const counter = document.getElementById('counter');
 
-            counter.textContent = clickCount; // Update the count text
-            popup.classList.add('show'); // Show the popup
+            popup.classList.add('show');
 
-            // Remove the 'show' class after animation completes to reset
             setTimeout(() => {
                 popup.classList.remove('show');
-            }, 1500); // Adjusted for jumpscare timing (0.5s fade + 1s delay)
+            }, 1000);
         }
     </script>
 
@@ -74,7 +69,7 @@
                     <h1>Simon</h1>
                     <p><span class="gray">By</span> Members</p>
                     <p class="gray">Age 9+</p>
-                    <button class="btn-green" onclick="showPopup()"><img src="asset/Play.png"></button>
+                    <a href="https://arduiblox.vercel.app/" target="_blank"><button class="btn-green" onclick="showPopup()"><img src="asset/Play.png"></button></a>
                     <img class="ButBlox" src="asset/ButBlox.png">
                 </div>
             </div>
@@ -82,7 +77,7 @@
     </div>
 
     <div id="popup" class="popup-content">
-        <span id="counter">1</span> times!
+        <span id="counter"></span> Let's Go to leaderboard
     </div>
 
     <footer>
