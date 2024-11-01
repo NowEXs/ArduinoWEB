@@ -517,7 +517,7 @@ input {
   display: none;
   padding: 20px;
   color: #ff8513;
-  font-size: 90px;
+  font-size: 60px;
   font-weight: bold;
   text-align: center;
   border-radius: 8px;
@@ -646,7 +646,7 @@ h1 {
   }
 
   .popup-content {
-    font-size: 64px; /* Reduce popup font size */
+    font-size: 60px; /* Reduce popup font size */
     padding: 10px; /* Reduce padding */
   }
 }
