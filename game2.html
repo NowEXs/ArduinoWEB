@@ -27,14 +27,16 @@
             clickCount++;
             const popup = document.getElementById('popup');
             const counter = document.getElementById('counter');
-
+            const sound = document.getElementById("sound");
+            
+            sound.play();
             counter.textContent = clickCount; // Update the count text
             popup.classList.add('show'); // Show the popup
 
             // Remove the 'show' class after animation completes to reset
             setTimeout(() => {
                 popup.classList.remove('show');
-            }, 1500); // Adjusted for jumpscare timing (0.5s fade + 1s delay)
+            }, 1000); // Adjusted for jumpscare timing (0.5s fade + 1s delay)
         }
     </script>
 
@@ -86,11 +88,10 @@
             </div>
         </div>
     </div>
-
+    <audio id="sound" src="asset/piano-bb_A#_major.wav"></audio>
     <footer>
         <p>Memory Challenge Tycoon!!!!! (EXTREME)</p>
     </footer>
-
 </body>
 
 </html>
